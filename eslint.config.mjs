@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Recursos auxiliares descargados para Codex; no son código de la aplicación.
+    "skills/**",
   ]),
 ]);
 

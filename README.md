@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BARBERÍA ORIGINAL WAVE — documentación de desarrollo
 
-## Getting Started
+Este paquete contiene instrucciones para que Codex trabaje sobre el proyecto Next.js **ya creado**. No es el código fuente de la aplicación.
 
-First, run the development server:
+## Instalación de los documentos
+1. Extrae el ZIP.
+2. Copia `AGENTS.md`, `README.md`, `PROMPT-CODEX-INICIO.md` y la carpeta `docs/` a la raíz del proyecto `C:\AR_proyectos_personales\barbershop`.
+3. No reemplaces tu `src/`, `package.json` ni `node_modules`.
+4. Abre el repositorio en Codex y pega el contenido de `PROMPT-CODEX-INICIO.md`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Índice
+- `AGENTS.md`: instrucciones operativas para Codex.
+- `docs/01-producto.md`: producto, usuarios, alcance y contenido.
+- `docs/02-arquitectura.md`: stack, estructura y prácticas técnicas.
+- `docs/03-diseno-figma.md`: tokens, componentes, landing y movimiento.
+- `docs/04-booking-reglas.md`: reglas confirmadas y pendientes.
+- `docs/05-autenticacion-admin.md`: pantallas, roles y administración.
+- `docs/06-plan-implementacion.md`: fases y criterios de aceptación.
+- `docs/07-decisiones-pendientes.md`: decisiones aprobadas y abiertas.
+- `PROMPT-CODEX-INICIO.md`: primer mensaje para Codex.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Nota:** las capturas originales de Figma no están incorporadas como recursos de producción. Codex necesita que le compartas las imágenes o que inspecciones Figma manualmente al revisar fidelidad visual.

@@ -1,0 +1,29 @@
+.shell :is(
+  a,
+  summary,
+  button:not(:disabled),
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled),
+  input[type="file"]:not(:disabled),
+  label:has(input[type="checkbox"]:not(:disabled)),
+  label:has(input[type="radio"]:not(:disabled))
+) {
+  cursor: pointer;
+}
+
+.shell input[type="file"]::file-selector-button {
+  cursor: pointer;
+}
+
+.shell :is(
+  input:not([type]),
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  textarea
+):not(:disabled) {
+  cursor: text;
+}

@@ -1,0 +1,9 @@
+# Minimal hosted config: leaves undeclared provider, URL and mail settings intact.
+project_id = "barbershop-auth-hook"
+
+[auth]
+additional_redirect_urls = ["http://localhost:3000/auth/callback", "http://localhost:3000/auth/oauth-return"]
+
+[auth.hook.before_user_created]
+enabled = true
+uri = "pg-functions://postgres/public/before_user_created_registration"

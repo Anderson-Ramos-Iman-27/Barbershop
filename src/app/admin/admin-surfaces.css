@@ -1,0 +1,108 @@
+/* Only the admin shell uses these surface roles; public pages stay unchanged. */
+[data-admin-theme] {
+  accent-color: var(--brand-brown);
+}
+
+[data-admin-theme] [data-admin-card] {
+  overflow: hidden;
+  border-color: color-mix(in srgb, var(--brand-brown) 35%, transparent);
+  padding: 1.25rem;
+}
+
+[data-admin-theme] [data-admin-card-header] {
+  margin: -1.25rem -1.25rem 0;
+  padding: 1.25rem;
+  background: var(--brand-brown);
+  color: var(--brand-white);
+}
+
+[data-admin-theme] [data-admin-card-header] p.text-brown {
+  color: var(--brand-cream);
+}
+
+[data-admin-theme] [data-admin-editor] {
+  overflow: hidden;
+  border-color: color-mix(in srgb, var(--brand-brown) 35%, transparent);
+  padding: 0;
+}
+
+[data-admin-theme] [data-admin-editor] > summary {
+  min-height: 3.5rem;
+  padding: 1.25rem;
+  background: var(--brand-brown);
+  color: var(--brand-white);
+  transition: background-color 180ms;
+}
+
+[data-admin-theme] [data-admin-editor] > summary:hover {
+  background: var(--brand-charcoal);
+}
+
+[data-admin-theme] [data-admin-editor] > summary::marker {
+  color: var(--brand-orange);
+}
+
+[data-admin-theme] [data-admin-editor] > div {
+  margin-top: 0;
+  padding: 1.5rem;
+}
+
+[data-admin-theme] [data-admin-edit] > summary {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  border: 1px solid var(--brand-orange);
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  background: var(--brand-orange);
+  color: var(--brand-charcoal);
+}
+
+[data-admin-theme] [data-admin-edit] > summary:hover {
+  border-color: var(--brand-brown);
+  background: var(--brand-brown);
+  color: var(--brand-white);
+}
+
+[data-admin-theme] [data-admin-metric] {
+  border-color: var(--brand-brown);
+  background: var(--brand-brown);
+  color: var(--brand-white);
+}
+
+[data-admin-theme] [data-admin-metric] .text-brown {
+  color: var(--brand-cream);
+}
+
+[data-admin-theme] [data-admin-metric] .text-charcoal {
+  color: var(--brand-white);
+}
+
+[data-admin-theme] [data-admin-metric]:is(a):hover {
+  border-color: var(--brand-orange);
+  background: var(--brand-charcoal);
+}
+
+[data-admin-theme] [data-admin-form-heading] {
+  grid-column: 1 / -1;
+  border-radius: 0.375rem;
+  background: var(--brand-brown);
+  padding: 1rem;
+  color: var(--brand-white);
+}
+
+[data-admin-theme] :is(input, textarea, select):not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):focus-visible {
+  outline: 2px solid var(--brand-brown);
+  outline-offset: 2px;
+}
+
+[data-admin-theme] summary:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: -4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-admin-theme] [data-admin-editor] > summary {
+    transition: none;
+  }
+}
